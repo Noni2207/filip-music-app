@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2{
+    font-family: 'Lobster', cursive; 
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: url("img/background.png") no-repeat center; 
+}
+h3,h4 {
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+}
+.App{
+  transition: all 0.5s ease;  
+}
+.library-active {
+    margin-left: 30%;
+}
+@media screen and (max-width:1300px){
+    body{
+        background: url("img/background1.png") no-repeat center; 
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 500px;
+    }
+   }
+   
+@media screen and (max-width:768px){
+    body{
+        background: url("img/background2.png") no-repeat center; 
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 500px;
+    }
+   }
+   @media screen and (max-width:500px){
+    body{
+        background: url("img/background3.png") no-repeat center; 
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 500px;
+    }
+   }
+
+@import "./_song.css";
+@import "./_player.css";
+@import "./_library.css";
+@import "./_nav.css";
